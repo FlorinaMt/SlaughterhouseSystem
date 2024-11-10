@@ -1,6 +1,6 @@
-﻿package com.example.secondstation.Dao;
+package com.example.secondstation.Dao;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.List;
 
 @Entity

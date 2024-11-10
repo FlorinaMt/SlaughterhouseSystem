@@ -1,8 +1,9 @@
-﻿package com.example.secondstation.Dao;
+package com.example.secondstation.Dao;
 
 import com.example.firststation.Dao.Animal;
+import jakarta.persistence.ManyToOne;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity @Table(schema = "slaughterhouse_schema", name = "animal_part") public class Part
 {

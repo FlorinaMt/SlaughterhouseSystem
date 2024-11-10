@@ -1,4 +1,4 @@
-﻿package com.example.secondstation.Repository;
+package com.example.secondstation.Repository;
 
 import com.example.secondstation.Dao.Tray;
 import org.springframework.data.jpa.repository.JpaRepository;

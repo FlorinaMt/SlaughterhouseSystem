@@ -1,6 +1,6 @@
 package com.example.thirdstation.Dao;
 
-import javax.persistence.Embeddable;
+import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 

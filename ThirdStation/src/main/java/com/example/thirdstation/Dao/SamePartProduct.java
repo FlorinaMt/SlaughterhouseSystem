@@ -1,6 +1,6 @@
 ﻿package com.example.thirdstation.Dao;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity
