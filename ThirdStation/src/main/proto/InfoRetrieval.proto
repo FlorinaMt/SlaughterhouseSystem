@@ -1,0 +1,35 @@
+﻿syntax = "proto3";
+package proto;
+
+service InfoRetrievalService {
+  rpc GetAnimalsForProduct (ProductIdRequest) returns (AnimalListResponse);
+  rpc GetProductsForAnimal (AnimalIdRequest) returns (ProductListResponse);
+}
+
+message ProductIdRequest {
+  int64 productId = 1;
+}
+
+message AnimalIdRequest {
+  int64 animalId = 1;
+}
+
+message AnimalListResponse {
+  repeated Animal animals = 1;
+}
+
+message ProductListResponse {
+  repeated Product products = 1;
+}
+
+message Animal {
+  int64 id = 1;
+  string registrationNumber = 2;
+  string animalType=3;
+  string origin=4;
+}
+
+message Product {
+  int64 id = 1;
+  string productType = 2;
+}
