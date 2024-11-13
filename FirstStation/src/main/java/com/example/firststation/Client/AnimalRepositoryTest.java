@@ -36,7 +36,6 @@ public class AnimalRepositoryTest {
   public static void main(String[] args) {
     AnimalRepositoryTest client = new AnimalRepositoryTest();
 
-    // Create an animal to register
     Animal newAnimal = new Animal();
     newAnimal.setAnimalRegNo("A12345");
     newAnimal.setAnimalType("Cow");
@@ -44,11 +43,9 @@ public class AnimalRepositoryTest {
     newAnimal.setAnimalWeight(500.00);
     newAnimal.setOrigin("Farm");
 
-    // Register the animal
     Animal registeredAnimal = client.registerAnimal(newAnimal);
     System.out.println("Registered Animal: " + registeredAnimal.getAnimalRegNo());
 
-    // Retrieve the animal
     Animal retrievedAnimal = client.getAnimal(1L);
     System.out.println("Retrieved Animal: " + retrievedAnimal.getAnimalType());
   }

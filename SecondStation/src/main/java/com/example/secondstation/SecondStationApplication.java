@@ -2,7 +2,7 @@ package com.example.secondstation;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+/*
 @SpringBootApplication public class SecondStationApplication
 {
 
@@ -11,4 +11,4 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
     SpringApplication.run(SecondStationApplication.class, args);
   }
 
-}
+}*/
