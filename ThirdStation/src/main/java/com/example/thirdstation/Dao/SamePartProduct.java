@@ -1,4 +1,4 @@
-﻿package com.example.thirdstation.Dao;
+package com.example.thirdstation.Dao;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
@@ -10,19 +10,19 @@ public class SamePartProduct {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long productId;
 
-  @Column(name = "partType")
+  @Column(name = "part_type")
   private String partType;
 
-  @Column(name = "numberOfParts")
+  @Column(name = "number_of_parts")
   private Integer numberOfParts;
 
   @Column(name = "weight")
   private Double weight;
 
-  @Column(name = "packageDate")
+  @Column(name = "package_date")
   private LocalDate packageDate;
 
-  @Column(name = "expirationDate")
+  @Column(name = "expiration_date")
   private LocalDate expirationDate;
 
   public LocalDate getExpirationDate()

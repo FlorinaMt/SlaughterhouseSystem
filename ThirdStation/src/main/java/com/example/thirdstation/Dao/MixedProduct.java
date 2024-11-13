@@ -1,4 +1,4 @@
-﻿package com.example.thirdstation.Dao;
+package com.example.thirdstation.Dao;
 
 import jakarta.persistence.*;
 
@@ -11,16 +11,16 @@ public class MixedProduct {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long productId;
 
-  @Column(name = "productName")
+  @Column(name = "product_name")
   private String productName;
 
   @Column(name = "weight")
   private Double weight;
 
-  @Column(name = "packageDate")
+  @Column(name = "package_date")
   private LocalDate packageDate;
 
-  @Column(name = "expirationDate")
+  @Column(name = "expiration_date")
   private LocalDate expirationDate;
 
   public LocalDate getExpirationDate()

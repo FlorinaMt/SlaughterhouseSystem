@@ -1,6 +1,5 @@
-﻿package com.example.thirdstation.Dao;
+package com.example.thirdstation.Dao;
 
-import com.example.secondstation.Dao.Tray;
 
 import jakarta.persistence.*;
 import java.io.Serializable;
@@ -14,12 +13,12 @@ public class SamePartProductTray implements Serializable
 
   @ManyToOne
   @MapsId("trayId")
-  @JoinColumn(name = "trayId")
+  @JoinColumn(name = "tray_id")
   private Tray tray;
 
   @ManyToOne
   @MapsId("productId")
-  @JoinColumn(name = "productId")
+  @JoinColumn(name = "product_id")
   private SamePartProduct product;
 
   public SamePartProductTrayId getId()

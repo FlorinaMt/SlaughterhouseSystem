@@ -1,6 +1,7 @@
-package com.example.secondstation.Dao;
-/*
-import com.example.firststation.Dao.Animal;
+package com.example.thirdstation.Dao;
+
+import com.example.thirdstation.Dao.Animal;
+//import com.example.firststation.Dao.Animal;
 import jakarta.persistence.ManyToOne;
 
 import jakarta.persistence.*;
@@ -10,12 +11,12 @@ import jakarta.persistence.*;
 
   @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Long id;
 
-  @Column(name = "partType", nullable = false) private String partType;
+  @Column(name = "part_type", nullable = false) private String partType;
 
-  @Column(name = "partWeight", nullable = false) private Double weight;
-  @ManyToOne @JoinColumn(name = "originAnimalId") private Animal originAnimal;
+  @Column(name = "part_weight", nullable = false) private Double weight;
+  @ManyToOne @JoinColumn(name = "origin_animal_id") private Animal originAnimal;
 
-  @ManyToOne @JoinColumn(name = "trayId") private Tray tray;
+  @ManyToOne @JoinColumn(name = "tray_id") private Tray tray;
 
   public Animal getOriginAnimal()
   {
@@ -67,5 +68,5 @@ import jakarta.persistence.*;
     this.id = id;
   }
 
-}*/
+}
 

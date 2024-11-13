@@ -1,8 +1,10 @@
-package com.example.firststation.Dao;
+package com.example.thirdstation.Dao;
 
 import jakarta.persistence.*;
+import org.hibernate.mapping.Join;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity @Table(schema = "slaughterhouse_schema", name = "animal") public class Animal
 {
@@ -18,6 +20,24 @@ import java.time.LocalDate;
   @Column(name = "animal_weight", nullable = false) private Double animalWeight;
 
   @Column(name = "origin", nullable = false) private String origin;
+  @OneToMany (mappedBy = "originAnimal") private List<Part> animalParts;
+
+
+  public List<Part> getAnimalParts()
+  {
+    return animalParts;
+  }
+
+  public void setAnimalParts(List<Part> animalParts)
+  {
+    this.animalParts = animalParts;
+  }
+
+  public void setAnimalWeight(Double animalWeight)
+  {
+    this.animalWeight = animalWeight;
+  }
+
 
   public String getAnimalType()
   {
